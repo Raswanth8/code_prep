@@ -10,9 +10,10 @@ class Solution:
         prices = [float("inf")]*n
         prices[src]= 0
         
-        temp = prices.copy()
+        
         
         for i in range(k+1):
+            temp = prices.copy()
             for s,d,p in flights:
                 if prices[s] == float("inf"):
                     continue
